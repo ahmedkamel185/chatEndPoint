@@ -81,7 +81,12 @@ exports.updateUser = async (req, res, next) => {
     User.countDocuments({ _id: id }, function (err, count) {
         if (count > 0) {
             //document exists });
-            User.updateOne({ _id: id }, { $set: { firstName: req.body.firstName } }).exec().then(result => {
+            User.updateOne({ _id: id }, { $set: {
+                
+                enabled: req.body.enabled
+               
+            
+            } }).exec().then(result => {
 
                 User.findById(id).exec().then(result => {
 
