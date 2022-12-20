@@ -1,0 +1,12 @@
+GET http://localhost:27017/
+
+###
+
+POST http://localhost:27017/
+
+Content-Type: "application/json"
+
+{
+	"name":"xxx",
+}
+
