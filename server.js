@@ -8,7 +8,7 @@ async function connect() {
 
     try {
 
-        await mongoose.connect(process.env.MONGODB_URL)
+        await mongoose.connect("mongodb://ahmedkamel89:a991984@ac-gz7wmdr-shard-00-00.vutj3i6.mongodb.net:27017,ac-gz7wmdr-shard-00-01.vutj3i6.mongodb.net:27017,ac-gz7wmdr-shard-00-02.vutj3i6.mongodb.net:27017/chatApp?ssl=true&replicaSet=atlas-f0kfg4-shard-0&authSource=admin&retryWrites=true&w=majority")
 
         console.log('connected to db')
 
