@@ -57,6 +57,8 @@ exports.addNewUser = async (req, res, next) => {
         emailAddress: req.body.emailAddress,
         password: req.body.password,
         profileImage: req.body.profileImage,
+        enabled: req.body.enabled,
+        chatId: req.body.chatId,
 
 
 
@@ -83,7 +85,9 @@ exports.updateUser = async (req, res, next) => {
             //document exists });
             User.updateOne({ _id: id }, { $set: {
                 
-                enabled: req.body.enabled
+                enabled: req.body.enabled,
+                chatId: req.body.chatId,
+                recentMessage: req.body.recentMessage
                
             
             } }).exec().then(result => {

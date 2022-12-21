@@ -40,6 +40,12 @@ const userSchema = new mongoose.Schema({
         required: false
     },
 
+    recentMessage: {
+        type: String,
+        required: false
+    },
+
+
     enabled: {
         type: String,
         required: false
