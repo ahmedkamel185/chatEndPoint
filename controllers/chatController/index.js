@@ -59,6 +59,7 @@ exports.addNewChat = async (req, res, next) => {
         profileImage: req.body.profileImage,
         enabled: req.body.enabled,
         chatId: req.body.chatId,
+        recentMessage: req.body.recentMessage,
 
 
 
