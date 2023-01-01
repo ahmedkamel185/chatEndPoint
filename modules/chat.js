@@ -16,17 +16,17 @@ const chatSchema = new mongoose.Schema({
     },
     rollNo: {
         type: String,
-        required: true
+        required: false
 
 
     },
     classNo: {
         type: String,
-        required: true
+        required: false
     },
     emailAddress: {
         type: String,
-        required: true
+        required: false
 
 
     },
